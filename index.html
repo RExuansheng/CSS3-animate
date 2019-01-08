@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.rocket {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			width: 157px;
+			height: 174px;
+			background: url(images/rocket_top.png) no-repeat;
+		}
+		.rocket:hover {
+			background: url(images/rocket_frame.png) no-repeat;
+			animation: checkImg 0.8s steps(5) infinite;
+		}
+
+		@keyframes checkImg {
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: -750px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="rocket"></div>
+</body>
+</html>
